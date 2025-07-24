@@ -3,7 +3,7 @@ import { Award, Rocket, Users, Gem } from "lucide-react";
 const features = [
   {
     icon: <Award className="h-10 w-10 text-accent" />,
-    title: "Over 15 years of design & manufacturing expertise",
+    title: "Over 15 years of Products & manufacturing expertise",
   },
   {
     icon: <Rocket className="h-10 w-10 text-accent" />,

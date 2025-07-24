@@ -6,7 +6,7 @@ export function Hero() {
     <section className="relative w-full overflow-hidden bg-background">
       <div className="absolute inset-0 bg-black/60 z-10" />
       <Image
-        src="https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752739364/Untitled-design-3-1_m6mvuo.webp"
+        src="https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752739364/Untitled-Products-3-1_m6mvuo.webp"
         alt="Office furniture"
         fill
         className="object-cover"
@@ -15,11 +15,11 @@ export function Hero() {
       <div className="container relative z-20 py-24 lg:py-40">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div className="space-y-6 text-center lg:text-left">
-            <h1 className="font-headline text-5xl font-bold tracking-tight text-primary-foreground sm:text-6xl md:text-7xl">
-              <span className="text-accent">Upgrade Your Workspace</span> with Urban Grey Furniture
+            <h1 className="font-headline text-4xl font-bold tracking-tight text-primary-foreground sm:text-6xl md:text-7xl">
+              <span className="text-accent">Ergonomic Office Chairs</span> for Every Workspace
             </h1>
             <p className="max-w-xl text-lg text-white lg:mx-0 mx-auto md:text-xl">
-              Transform your workspace with stylish, functional furniture designed to boost productivity, collaboration, and comfort. Perfect for growing businesses and design-driven teams. Explore our curated collection today!
+           At Urban Grey, we Products office chairs that do more than just support you — they elevate how you sit, move, and work. From executive cabins to collaborative setups, our chairs combine form, function, and long-lasting comfort.
             </p>
           </div>
           <div>

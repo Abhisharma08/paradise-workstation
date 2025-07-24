@@ -10,7 +10,7 @@ export function CTA() {
             Ready to Shape Your Space?
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-lg text-accent-foreground/80 md:text-xl">
-            Download our latest catalogue to explore our full collection of design-led furniture and get a personalized quote for your project.
+            Download our latest catalogue to explore our full collection of Products-led furniture and get a personalized quote for your project.
           </p>
           <div className="mt-10">
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg">
