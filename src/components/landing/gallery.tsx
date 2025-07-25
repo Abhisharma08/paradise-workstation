@@ -7,19 +7,19 @@ const galleryItems = [
   {
     title: "Executive Comfort",
     description: "Chairs that reflect leadership — bold silhouettes with premium finish.",
-    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752742222/image-03_p3u9ou.jpg",
+    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1753434307/freepik__the-style-is-candid-image-photography-with-natural__15222_pjhx3z.png",
     hint: "modular workstation",
   },
   {
     title: "Ergo Mesh Task Chairs",
     description: "Support where it matters — breathable backs, full adjustability.",
-    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752742222/image-01_gw93hr.jpg",
+    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1753434301/freepik__the-style-is-candid-image-photography-with-natural__15221_tkijln.png",
     hint: "premium office chair",
   },
   {
     title: "Collaborative Seating",
     description: "Flexible seating options for fast-moving teams and shared zones.",
-    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752742222/image-04_k26kgm.jpg",
+    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1753434305/freepik__the-style-is-candid-image-photography-with-natural__15224_udmdj3.png",
     hint: "conference room",
   },
 

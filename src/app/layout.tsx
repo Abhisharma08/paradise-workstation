@@ -6,8 +6,8 @@ import Script from 'next/script';
 
 
 export const metadata: Metadata = {
-  title: 'Modern Office Furniture Solutions',
-  description: 'Discover premium furniture for offices and commercial spaces with Urban Grey. From desks to seating, elevate your workspace today.',
+  title: 'Buy Office Chairs in Delhi – Ergonomic & Executive Chairs Online | Urban Grey',
+  description: 'Shop premium office chairs in Delhi at Urban Grey. Explore ergonomic, executive, and mesh chairs designed for comfort and productivity. Fast delivery & best prices.',
   keywords: 'workspace Products, urban grey furniture, office solutions, commercial furniture, workspace solutions',
 };
 
