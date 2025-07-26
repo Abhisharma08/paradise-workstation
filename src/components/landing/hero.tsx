@@ -19,7 +19,7 @@ export function Hero() {
               <span className="text-accent">Ergonomic Office Chairs</span> for Every Workspace
             </h1>
             <p className="max-w-xl text-lg text-white lg:mx-0 mx-auto md:text-xl">
-           At Urban Grey, we Products office chairs that do more than just support you — they elevate how you sit, move, and work. From executive cabins to collaborative setups, our chairs combine form, function, and long-lasting comfort.
+           At Urban Grey, we design office chairs that do more than just support you — they elevate how you sit, move, and work. From executive cabins to collaborative setups, our chairs combine form, function, and long-lasting comfort.
             </p>
           </div>
           <div>
