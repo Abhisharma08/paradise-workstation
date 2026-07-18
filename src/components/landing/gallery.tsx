@@ -4,24 +4,41 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const galleryItems = [
-  {
-    title: "Executive Comfort",
-    description: "Chairs that reflect leadership — bold silhouettes with premium finish.",
-    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1753434307/freepik__the-style-is-candid-image-photography-with-natural__15222_pjhx3z.png",
-    hint: "modular workstation",
-  },
-  {
-    title: "Ergo Mesh Task Chairs",
-    description: "Support where it matters — breathable backs, full adjustability.",
-    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1753434301/freepik__the-style-is-candid-image-photography-with-natural__15221_tkijln.png",
-    hint: "premium office chair",
-  },
-  {
-    title: "Collaborative Seating",
-    description: "Flexible seating options for fast-moving teams and shared zones.",
-    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1753434305/freepik__the-style-is-candid-image-photography-with-natural__15224_udmdj3.png",
-    hint: "conference room",
-  },
+{
+  title: "Linear Workstations",
+  description:
+    "Ideal for organized individual workspaces with efficient space utilization.",
+  image: "YOUR_IMAGE_URL",
+  hint: "linear workstation",
+},
+{
+  title: "Cluster Workstations",
+  description:
+    "Designed to support collaboration while maintaining personal work zones.",
+  image: "YOUR_IMAGE_URL",
+  hint: "cluster workstation",
+},
+{
+  title: "Modular Workstations",
+  description:
+    "Flexible workstation systems that adapt to changing workplace requirements.",
+  image: "YOUR_IMAGE_URL",
+  hint: "modular workstation",
+},
+{
+  title: "Manager Workstations",
+  description:
+    "Spacious workstation solutions designed for focused work and professional settings.",
+  image: "YOUR_IMAGE_URL",
+  hint: "manager workstation",
+},
+{
+  title: "Custom Workstations",
+  description:
+    "Made-to-order workstation solutions tailored to your office layout and workflow.",
+  image: "YOUR_IMAGE_URL",
+  hint: "custom workstation",
+},
 
 ];
 
@@ -31,7 +48,7 @@ export function Gallery() {
       <div className="container">
         <div className="text-center">
           <h2 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl text-foreground">
-            Products <span className="text-accent">Gallery</span>
+            Our <span className="text-secondary">Workstation </span>Range
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-lg text-foreground/80 md:text-xl">
            Designed for comfort. Crafted for performance. Explore our best-selling chair collections.
@@ -58,7 +75,7 @@ export function Gallery() {
           </div>
         </div>
         <div className="mt-16 text-center">
-          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6">
+          <Button asChild size="lg" className="bg-secondary text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6">
             <Link href="#get-a-quote">Get a Quote</Link>
           </Button>
         </div>

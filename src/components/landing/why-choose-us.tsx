@@ -1,21 +1,37 @@
-import { Award, Rocket, Users, Gem } from "lucide-react";
+import { Award, Rocket, Users, Gem, Armchair, LayoutGrid, SlidersHorizontal, ShieldCheck, Ruler, Wrench, BadgeCheck,} from "lucide-react";
 
 const features = [
-  {
-    icon: <Award className="h-10 w-10 text-accent" />,
-    title: "Over 15 years of Products & manufacturing expertise",
-  },
-  {
-    icon: <Rocket className="h-10 w-10 text-accent" />,
-    title: "Pan-India delivery & project execution",
-  },
-  {
-    icon: <Users className="h-10 w-10 text-accent" />,
-    title: "Trusted by 500+ corporates & architects",
-  },
-  {
+ {
     icon: <Gem className="h-10 w-10 text-accent" />,
-    title: "Premium materials & custom-built options",
+    title: "Premium Quality Materials",
+  },
+  {
+    icon: <Armchair className="h-10 w-10 text-accent" />,
+    title: "Ergonomic Workstation Designs",
+  },
+  {
+    icon: <LayoutGrid className="h-10 w-10 text-accent" />,
+    title: "Modern Modular Solutions",
+  },
+  {
+    icon: <SlidersHorizontal className="h-10 w-10 text-accent" />,
+    title: "Customizable Configurations",
+  },
+  {
+    icon: <ShieldCheck className="h-10 w-10 text-accent" />,
+    title: "Durable Construction",
+  },
+  {
+    icon: <Ruler className="h-10 w-10 text-accent" />,
+    title: "Smart Space Planning",
+  },
+  {
+    icon: <Wrench className="h-10 w-10 text-accent" />,
+    title: "Professional Installation",
+  },
+  {
+    icon: <BadgeCheck className="h-10 w-10 text-accent" />,
+    title: "Lasting Performance",
   },
 ];
 
@@ -25,7 +41,7 @@ export function WhyChooseUs() {
       <div className="container">
         <div className="text-center">
           <h2 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl text-foreground">
-            Why Urban Grey?
+            Why Choose <span className="text-secondary">Paradise Furniture</span>?
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-lg text-foreground/80 md:text-xl">
             We're more than just furniture. We're your partners in creating a productive and inspiring workspace.

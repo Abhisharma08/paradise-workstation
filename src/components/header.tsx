@@ -23,7 +23,7 @@ export function Header() {
           <Link href="/" className="flex items-center gap-2">
             <Logo className="h-12 w-auto" />
             <span className="sr-only">
-              Urbangrey
+              
             </span>
           </Link>
         </div>
@@ -41,7 +41,7 @@ export function Header() {
             <Link href="/" className="flex items-center gap-2">
                 <Logo className="h-12 w-auto" />
                 <span className="sr-only">
-                Urbangrey
+                
                 </span>
             </Link>
         </div>
@@ -59,7 +59,7 @@ export function Header() {
           ))}
         </nav>
         <div className="ml-auto hidden md:flex">
-          <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button asChild className="bg-secondary text-accent-foreground hover:bg-accent">
             <Link href="#get-a-quote">Get a Quote</Link>
           </Button>
         </div>
@@ -78,7 +78,7 @@ export function Header() {
               </Link>
             ))}
             <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
-              <Link href="#get-a-quote" onClick={() => setIsMenuOpen(false)}>Get a Quote</Link>
+              <Link href="#get-a-quote" onClick={() => setIsMenuOpen(false)}>Explore Workstations</Link>
             </Button>
           </div>
         </div>

@@ -5,6 +5,10 @@ import { CTA } from "@/components/landing/cta";
 import { Footer } from "@/components/footer";
 import { Gallery } from "@/components/landing/gallery";
 import { FloatingEnquireButton } from "@/components/landing/floating-enquire-button";
+import { WorkspaceSolutions } from "@/components/landing/perfect-workspace";
+import { ProductivitySection } from "@/components/landing/productivity-section";
+import { CustomWorkspaceSection } from "@/components/landing/custom-workspace-section";
+import { CompleteWorkspaceSolutions } from "@/components/landing/complete-workspace-solutions";
 
 export default function Home() {
   return (
@@ -14,6 +18,10 @@ export default function Home() {
         <Hero />
         <Gallery />
         <WhyChooseUs />
+        <WorkspaceSolutions />
+        <CustomWorkspaceSection />
+        <ProductivitySection />
+        <CompleteWorkspaceSolutions />
         <CTA />
       </main>
       <FloatingEnquireButton />

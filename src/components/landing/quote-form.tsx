@@ -152,7 +152,7 @@ export function QuoteForm() {
                     </FormItem>
                   )}
                 />
-                <Button type="button" onClick={handleNext} className="w-full bg-accent text-accent-foreground hover:bg-accent/90" disabled={isSubmitting}>
+                <Button type="button" onClick={handleNext} className="w-full bg-secondary text-accent-foreground hover:bg-accent" disabled={isSubmitting}>
                   {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
                   {isSubmitting ? 'Saving...' : 'Next'}
                 </Button>
@@ -226,7 +226,7 @@ export function QuoteForm() {
                     <Button type="button" variant="outline" onClick={() => setStep(1)} className="w-full">
                         Back
                     </Button>
-                    <Button type="submit" className="w-full bg-accent text-accent-foreground hover:bg-accent/90" disabled={isSubmitting}>
+                    <Button type="submit" className="w-full bg-secondary text-accent-foreground hover:bg-secondary" disabled={isSubmitting}>
                         {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
                         {isSubmitting ? 'Submitting...' : 'Get a Quote'}
                     </Button>

@@ -1,7 +1,7 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  basePath: '/office-chairs-delhi',
+  basePath: '',
   trailingSlash: true,
   typescript: {
     ignoreBuildErrors: true,

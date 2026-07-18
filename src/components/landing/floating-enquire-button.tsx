@@ -57,7 +57,7 @@ export function FloatingEnquireButton() {
         size="lg"
         className="w-full text-lg bg-accent text-accent-foreground hover:bg-accent/90 animate-pulse"
       >
-        <Link href="#get-a-quote">Enquire Now</Link>
+        <Link href="#get-a-quote">Explore Workstations</Link>
       </Button>
     </div>
   );
