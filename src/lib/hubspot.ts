@@ -10,10 +10,11 @@ export const HubspotUpsertInputSchema = z.object({
   city: z.string().optional().describe("The contact's city."),
   requirement: z
     .enum([
+      'Linear Workstations',
+      'Cluster Workstations',
       'Modular Workstations',
-      'Premium Office Chairs',
-      'Conference Room Furniture',
-      'Reception Area Furniture',
+      'Manager Workstations',
+      'Custom Workstations',
     ])
     .optional()
     .describe("The contact's furniture requirement."),
@@ -85,7 +86,7 @@ async function searchContactIdByEmail(email: string): Promise<string | null> {
 function buildProperties(input: HubspotUpsertInput) {
   const properties: Record<string, string> = {
     email: input.email,
-    lead_source: 'Office Chairs Delhi LP',
+    lead_source: 'office workstation',
   };
 
   if (input.fullName) {
@@ -99,10 +100,10 @@ function buildProperties(input: HubspotUpsertInput) {
 
   if (input.requirement) {
     properties.lifecyclestage = 'lead';
-    properties['what_is_your_requirement_'] = input.requirement;
+    properties.what_is_your_requirement = input.requirement;
   }
 
-  if (input.quantity) properties['quantity_required'] = input.quantity;
+  if (input.quantity) properties.quantity_required = input.quantity;
 
   return properties;
 }
