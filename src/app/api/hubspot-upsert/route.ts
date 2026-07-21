@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
-import { hubspotUpsert } from '@/ai/flows/hubspot-upsert-flow';
-import type { HubspotUpsertInput } from '@/ai/flows/hubspot-upsert-flow';
+import { hubspotUpsert } from '@/lib/hubspot';
+import type { HubspotUpsertInput } from '@/lib/hubspot';
 
 export async function POST(request: Request) {
   try {

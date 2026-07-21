@@ -1,41 +1,36 @@
-/**
- * @fileOverview A flow for creating or updating a HubSpot contact.
- *
- * - hubspotUpsert - Creates or updates a contact in HubSpot based on email address.
- * - HubspotUpsertInput - The input type for the hubspotUpsert function.
- * - HubspotUpsertOutput - The return type for the hubspotUpsert function.
- */
-
 import { z } from 'zod';
 
 const HUBSPOT_API_BASE_URL = 'https://api.hubapi.com/crm/v3/objects/contacts';
 const HUBSPOT_SEARCH_URL = `${HUBSPOT_API_BASE_URL}/search`;
 
-const HubspotUpsertInputSchema = z.object({
+export const HubspotUpsertInputSchema = z.object({
   email: z.string().email().describe("The contact's email address."),
   fullName: z.string().optional().describe("The contact's full name."),
   phoneNumber: z.string().optional().describe("The contact's phone number."),
   city: z.string().optional().describe("The contact's city."),
   requirement: z
     .enum([
-      "Modular Workstations", 
-      "Premium Office Chairs", 
-      "Conference Room Furniture", 
-      "Reception Area Furniture",
+      'Modular Workstations',
+      'Premium Office Chairs',
+      'Conference Room Furniture',
+      'Reception Area Furniture',
     ])
     .optional()
     .describe("The contact's furniture requirement."),
-  quantity: z.enum(['3+', '6+', '8+', '12+', '15+', '20+']).optional().describe('The required quantity.'),
+  quantity: z
+    .enum(['3+', '6+', '8+', '12+', '15+', '20+'])
+    .optional()
+    .describe('The required quantity.'),
 });
+
 export type HubspotUpsertInput = z.infer<typeof HubspotUpsertInputSchema>;
 
-const HubspotUpsertOutputSchema = z.object({
+export const HubspotUpsertOutputSchema = z.object({
   id: z.string().describe('The HubSpot contact ID.'),
   isNew: z.boolean().describe('Whether a new contact was created.'),
 });
-export type HubspotUpsertOutput = z.infer<typeof HubspotUpsertOutputSchema>;
 
-// ---- Internal helpers ----
+export type HubspotUpsertOutput = z.infer<typeof HubspotUpsertOutputSchema>;
 
 type HttpMethod = 'POST' | 'PATCH';
 
@@ -74,7 +69,7 @@ async function searchContactIdByEmail(email: string): Promise<string | null> {
         filters: [{ propertyName: 'email', operator: 'EQ', value: email }],
       },
     ],
-    properties: ['email', 'lead_source'], // include lead_source in first step
+    properties: ['email', 'lead_source'],
     limit: 1,
   };
 
@@ -90,7 +85,7 @@ async function searchContactIdByEmail(email: string): Promise<string | null> {
 function buildProperties(input: HubspotUpsertInput) {
   const properties: Record<string, string> = {
     email: input.email,
-    lead_source: 'Office Chairs Delhi LP', // custom property always added at the start
+    lead_source: 'Office Chairs Delhi LP',
   };
 
   if (input.fullName) {
@@ -112,21 +107,17 @@ function buildProperties(input: HubspotUpsertInput) {
   return properties;
 }
 
-// ---- Public flow ----
-
 export async function hubspotUpsert(input: HubspotUpsertInput): Promise<HubspotUpsertOutput> {
   const properties = buildProperties(input);
 
-  // 1) Try to find an existing contact by email
-  let existingContactId = await searchContactIdByEmail(input.email);
+  const existingContactId = await searchContactIdByEmail(input.email);
 
-  // 2) Update or create
   if (existingContactId) {
     const url = `${HUBSPOT_API_BASE_URL}/${existingContactId}`;
     const resp = await callHubspotAPI<{ id: string }>(url, 'PATCH', { properties });
     return { id: resp.id, isNew: false };
-  } else {
-    const resp = await callHubspotAPI<{ id: string }>(HUBSPOT_API_BASE_URL, 'POST', { properties });
-    return { id: resp.id, isNew: true };
   }
+
+  const resp = await callHubspotAPI<{ id: string }>(HUBSPOT_API_BASE_URL, 'POST', { properties });
+  return { id: resp.id, isNew: true };
 }

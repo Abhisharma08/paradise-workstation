@@ -12,7 +12,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Loader2 } from "lucide-react";
-import type { HubspotUpsertInput } from "@/ai/flows/hubspot-upsert-flow";
+import type { HubspotUpsertInput } from "@/lib/hubspot";
 import { useToast } from "@/hooks/use-toast";
 
 const stepOneSchema = z.object({
