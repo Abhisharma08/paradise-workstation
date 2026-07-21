@@ -9,6 +9,7 @@ import { WorkspaceSolutions } from "@/components/landing/perfect-workspace";
 import { ProductivitySection } from "@/components/landing/productivity-section";
 import { CustomWorkspaceSection } from "@/components/landing/custom-workspace-section";
 import { CompleteWorkspaceSolutions } from "@/components/landing/complete-workspace-solutions";
+import { CTA } from "@/components/landing/cta";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <CustomWorkspaceSection />
         <ProductivitySection />
         <CompleteWorkspaceSolutions />
+        <CTA />
       </main>
       <FloatingEnquireButton />
       <Footer />
