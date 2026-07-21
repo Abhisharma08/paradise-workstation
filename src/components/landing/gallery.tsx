@@ -8,35 +8,35 @@ const galleryItems = [
   title: "Linear Workstations",
   description:
     "Ideal for organized individual workspaces with efficient space utilization.",
-  image: "YOUR_IMAGE_URL",
+  image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1784612164/IMG_2024.JPG_wpra93.jpg",
   hint: "linear workstation",
 },
 {
   title: "Cluster Workstations",
   description:
     "Designed to support collaboration while maintaining personal work zones.",
-  image: "YOUR_IMAGE_URL",
+  image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1784613822/IMG_2064_ihgmhv.png",
   hint: "cluster workstation",
 },
 {
   title: "Modular Workstations",
   description:
     "Flexible workstation systems that adapt to changing workplace requirements.",
-  image: "YOUR_IMAGE_URL",
+  image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1784612158/IMG_2020.JPG_qlxgoj.jpg",
   hint: "modular workstation",
 },
 {
   title: "Manager Workstations",
   description:
     "Spacious workstation solutions designed for focused work and professional settings.",
-  image: "YOUR_IMAGE_URL",
+  image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1784612188/IMG_2027_dsed7l.png",
   hint: "manager workstation",
 },
 {
   title: "Custom Workstations",
   description:
     "Made-to-order workstation solutions tailored to your office layout and workflow.",
-  image: "YOUR_IMAGE_URL",
+  image: "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1784612195/IMG_2028_prqfmt.png",
   hint: "custom workstation",
 },
 
