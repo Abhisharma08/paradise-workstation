@@ -12,7 +12,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Loader2 } from "lucide-react";
-import { hubspotUpsert, HubspotUpsertInput } from "@/ai/flows/hubspot-upsert-flow";
+import type { HubspotUpsertInput } from "@/ai/flows/hubspot-upsert-flow";
 import { useToast } from "@/hooks/use-toast";
 
 const stepOneSchema = z.object({
@@ -68,7 +68,19 @@ export function QuoteForm() {
           email: form.getValues("email"),
           phoneNumber: form.getValues("phoneNumber"),
         };
-        await hubspotUpsert(stepOneData);
+
+        const response = await fetch("/office-workstation/api/hubspot-upsert", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(stepOneData),
+        });
+
+        if (!response.ok) {
+          throw new Error(await response.text());
+        }
+
         setStep(2);
       } catch (error) {
         console.error("HubSpot API Error:", error);
@@ -86,7 +98,18 @@ export function QuoteForm() {
   const handleSubmit = async (data: FormData) => {
     setIsSubmitting(true);
     try {
-      await hubspotUpsert(data);
+      const response = await fetch("/office-workstation/api/hubspot-upsert", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error(await response.text());
+      }
+
       router.push("/thank-you?success=true");
     } catch (error) {
       console.error("HubSpot API Error:", error);
