@@ -3,14 +3,14 @@ import { Logo } from "@/components/icons";
 
 export function Footer() {
   return (
-    <footer id="footer-section" className="border-t border-border bg-[#313d4d] pb-20 md:pb-0">
+    <footer id="footer-section" className="border-t border-border bg-[#313d4d] pb-20 md:pb-0 text-white">
       <div className="container py-6 sm:py-8">
         <div className="flex flex-col items-center justify-between sm:flex-row">
-          <Link href="/" className="mb-4 sm:mb-0">
+          <Link href="/" className="mb-4 sm:mb-0 text-white">
             <Logo className="h-10 w-auto" />
             <span className="sr-only">Paradise furniture</span>
           </Link>
-          <p className="text-sm text-foreground/60">
+          <p className="text-sm text-white/90">
             &copy; 2026 Paradise Furniture, All rights reserved.
           </p>
         </div>

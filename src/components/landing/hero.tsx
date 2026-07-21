@@ -4,7 +4,7 @@ import Image from "next/image";
 export function Hero() {
   return (
     <section className="relative w-full overflow-hidden bg-background">
-      <div className="absolute inset-0 bg-black/60 z-10" />
+      <div className="absolute inset-0 bg-black/80 z-10" />
       <Image
         src="https://res.cloudinary.com/ddqqlfsjp/image/upload/v1753434922/image_vfgr5b.png"
         alt="Office furniture"

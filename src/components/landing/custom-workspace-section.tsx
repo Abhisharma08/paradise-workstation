@@ -32,7 +32,7 @@ export function CustomWorkspaceSection() {
             that's both functional and visually impressive.
           </p>
 
-          <div className="mt-8 sm:mt-10 lg:mt-12 grid gap-4 sm:gap-6 sm:grid-cols-3">
+          <div className="mt-8 sm:mt-10 lg:mt-12 grid grid-cols-2 gap-3 sm:gap-6 sm:grid-cols-3">
             {highlights.map((item) => (
               <div
                 key={item.title}

@@ -65,7 +65,7 @@ export function ProductivitySection() {
               office space.
             </p>
 
-            <div className="mt-6 sm:mt-8 lg:mt-10 grid gap-4 sm:grid-cols-2">
+            <div className="mt-6 sm:mt-8 lg:mt-10 grid grid-cols-2 gap-3 sm:gap-4 sm:grid-cols-2">
               {productivityFeatures.map((feature) => (
                 <div
                   key={feature.title}

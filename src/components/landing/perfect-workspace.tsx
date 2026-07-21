@@ -58,7 +58,7 @@ export function WorkspaceSolutions() {
               to enhance productivity, comfort, and efficient space utilization.
             </p>
 
-            <div className="mt-6 sm:mt-8 lg:mt-10 grid gap-4 sm:grid-cols-2">
+            <div className="mt-6 sm:mt-8 lg:mt-10 grid grid-cols-2 gap-3 sm:gap-4 sm:grid-cols-2">
               {workspaces.map((workspace) => (
                 <div
                   key={workspace.title}

@@ -55,7 +55,7 @@ export function FloatingEnquireButton() {
       <Button
         asChild
         size="lg"
-        className="w-full text-lg bg-accent text-accent-foreground hover:bg-accent/90 animate-pulse"
+        className="w-full text-lg bg-secondary text-secondary-foreground hover:bg-secondary/90 animate-pulse"
       >
         <Link href="#get-a-quote">Enquire Now</Link>
       </Button>
