@@ -111,7 +111,7 @@ export function QuoteForm() {
         throw new Error(await response.text());
       }
 
-      router.push("/thank-you?success=true");
+      router.push("/office-workstation/thank-you?success=true");
     } catch (error) {
       console.error("HubSpot API Error:", error);
       toast({
