@@ -1,7 +1,6 @@
 import { Header } from "@/components/header";
 import { Hero } from "@/components/landing/hero";
 import { WhyChooseUs } from "@/components/landing/why-choose-us";
-import { CTA } from "@/components/landing/cta";
 import { Footer } from "@/components/footer";
 import { Gallery } from "@/components/landing/gallery";
 import { FloatingEnquireButton } from "@/components/landing/floating-enquire-button";
