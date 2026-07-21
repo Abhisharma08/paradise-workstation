@@ -69,6 +69,11 @@ export function Gallery() {
                 <div className="p-5 sm:p-6 flex-grow flex flex-col">
                   <h3 className="font-headline text-lg sm:text-xl font-bold">{item.title}</h3>
                   <p className="mt-2 text-foreground/80 text-sm sm:text-base flex-grow">{item.description}</p>
+                  <div className="mt-4">
+                    <Button asChild variant="outline" className="w-full border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
+                      <Link href="#get-a-quote">Enquire Now</Link>
+                    </Button>
+                  </div>
                 </div>
               </div>
             ))}
