@@ -20,7 +20,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border bg-white">
       <div className="container flex h-20 items-center">
         <div className="mr-auto hidden md:flex">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/office-workstation/" className="flex items-center gap-2">
             <Logo className="h-12 w-auto" />
             <span className="sr-only">
               
@@ -38,7 +38,7 @@ export function Header() {
             </button>
         </div>
         <div className="flex md:hidden flex-grow justify-center">
-            <Link href="/" className="flex items-center gap-2">
+            <Link href="/office-workstation/" className="flex items-center gap-2">
                 <Logo className="h-12 w-auto" />
                 <span className="sr-only">
                 

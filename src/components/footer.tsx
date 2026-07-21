@@ -6,7 +6,7 @@ export function Footer() {
     <footer id="footer-section" className="border-t border-border bg-[#313d4d] pb-28 md:pb-0">
       <div className="container py-8">
         <div className="flex flex-col items-center justify-between sm:flex-row">
-          <Link href="/" className="mb-4 sm:mb-0">
+          <Link href="/office-workstation/" className="mb-4 sm:mb-0">
             <Logo className="h-10 w-auto" />
             <span className="sr-only">Urbangrey</span>
           </Link>

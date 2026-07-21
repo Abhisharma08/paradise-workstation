@@ -4,6 +4,11 @@
       "source": "/",
       "destination": "/office-workstation/",
       "permanent": true
+    },
+    {
+      "source": "/office-workstation",
+      "destination": "/office-workstation/",
+      "permanent": true
     }
   ]
 }
