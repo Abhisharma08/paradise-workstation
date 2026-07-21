@@ -42,7 +42,7 @@ const workspaces = [
 
 export function WorkspaceSolutions() {
   return (
-    <section className="py-10 sm:py-20 lg:py-28 bg-background">
+    <section className="py-8 sm:py-16 lg:py-24 bg-background">
       <div className="container">
         <div className="grid items-center gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left Content */}

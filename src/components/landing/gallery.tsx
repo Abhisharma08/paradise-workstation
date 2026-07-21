@@ -44,7 +44,7 @@ const galleryItems = [
 
 export function Gallery() {
   return (
-    <section id="gallery" className="bg-background py-10 sm:py-20 lg:py-28">
+    <section id="gallery" className="bg-background py-8 sm:py-16 lg:py-24">
       <div className="container">
         <div className="text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl text-foreground">

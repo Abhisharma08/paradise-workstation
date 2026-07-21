@@ -17,7 +17,7 @@ const highlights = [
 
 export function CustomWorkspaceSection() {
   return (
-    <section className="py-10 sm:py-20 lg:py-28 bg-background">
+    <section className="py-8 sm:py-16 lg:py-24 bg-background">
       <div className="container">
         <div className="mx-auto max-w-5xl rounded-2xl sm:rounded-3xl border bg-card p-6 sm:p-8 md:p-12 text-center shadow-lg">
 
