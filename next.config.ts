@@ -15,12 +15,7 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
-      {
-        protocol: 'https',
-        hostname: 'urbangreyfurniture.com',
-        port: '',
-        pathname: '/**',
-      },
+
       {
         protocol: 'https',
         hostname: 'res.cloudinary.com',

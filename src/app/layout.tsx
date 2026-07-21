@@ -6,9 +6,9 @@ import Script from 'next/script';
 
 
 export const metadata: Metadata = {
-  title: 'Buy Office Chairs in Delhi – Ergonomic & Executive Chairs Online | Urban Grey',
-  description: 'Shop premium office chairs in Delhi at Urban Grey. Explore ergonomic, executive, and mesh chairs designed for comfort and productivity. Fast delivery & best prices.',
-  keywords: 'workspace Products, urban grey furniture, office solutions, commercial furniture, workspace solutions',
+  title: 'Buy Office Chairs in Delhi – Ergonomic & Executive Chairs Online | Paradise Furniture',
+  description: 'Shop premium office chairs in Delhi at Paradise Furniture. Explore ergonomic, executive, and mesh chairs designed for comfort and productivity. Fast delivery & best prices.',
+  keywords: 'workspace Products, Paradise Furniture furniture, office solutions, commercial furniture, workspace solutions',
 };
 
 export default function RootLayout({

@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between sm:flex-row">
           <Link href="/office-workstation/" className="mb-4 sm:mb-0">
             <Logo className="h-10 w-auto" />
-            <span className="sr-only">Urbangrey</span>
+            <span className="sr-only">Paradise furniture</span>
           </Link>
           <p className="text-sm text-foreground/60 ">
             &copy; 2026 Paradise Furniture, All rights reserved.
