@@ -22,7 +22,7 @@ export default function Home() {
         <CustomWorkspaceSection />
         <ProductivitySection />
         <CompleteWorkspaceSolutions />
-        <CTA />
+        {/* <CTA /> */}
       </main>
       <FloatingEnquireButton />
       <Footer />
