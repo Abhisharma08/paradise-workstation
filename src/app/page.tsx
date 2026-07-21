@@ -22,7 +22,6 @@ export default function Home() {
         <CustomWorkspaceSection />
         <ProductivitySection />
         <CompleteWorkspaceSolutions />
-        <CTA />
       </main>
       <FloatingEnquireButton />
       <Footer />

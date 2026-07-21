@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 import {
   BriefcaseBusiness,
   Armchair,
@@ -51,6 +53,11 @@ export function CompleteWorkspaceSolutions() {
             solutions, waiting area seating, and more to create a complete,
             functional, and professional office environment.
           </p>
+          <div className="mt-10">
+            <Button asChild size="lg" className="rounded-full bg-secondary px-8 py-4 text-lg font-semibold text-secondary-foreground hover:bg-secondary/90">
+              <Link href="#get-a-quote">Contact Us Today</Link>
+            </Button>
+          </div>
         </div>
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
