@@ -19,7 +19,7 @@ function ThankYouContent() {
   useEffect(() => {
     // If the 'success' param is not 'true', redirect to the homepage.
     if (successParam !== "true") {
-      router.replace("/office-workstation/");
+      router.replace("/");
     }
   }, [successParam, router]);
 
@@ -62,7 +62,7 @@ function ThankYouContent() {
                 size="lg"
                 className="bg-accent text-accent-foreground hover:bg-accent/90"
               >
-                <Link href="/office-workstation/">Back to Home</Link>
+                <Link href="/">Back to Home</Link>
               </Button>
             </div>
           </div>

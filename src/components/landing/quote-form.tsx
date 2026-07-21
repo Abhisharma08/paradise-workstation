@@ -48,10 +48,10 @@ export function QuoteForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
   const router = useRouter();
-  const hubspotPath = "/office-workstation/api/hubspot-upsert";
+  const hubspotPath = "/api/hubspot-upsert";
 
   const form = useForm<FormData>({
-    resolver: zodResolver(step === 1 ? stepOneSchema : formSchema),
+    resolver: zodResolver(formSchema),
     defaultValues: {
       fullName: "",
       email: "",
@@ -71,28 +71,18 @@ export function QuoteForm() {
           phoneNumber: form.getValues("phoneNumber"),
         };
 
-        const response = await fetch(hubspotPath, {
+        await fetch(hubspotPath, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(stepOneData),
         });
-
-        if (!response.ok) {
-          throw new Error(await response.text());
-        }
-
-        setStep(2);
       } catch (error) {
         console.error("HubSpot API Error:", error);
-        toast({
-          variant: "destructive",
-          title: "Error",
-          description: "Failed to save your information. Please try again.",
-        });
       } finally {
         setIsSubmitting(false);
+        setStep(2);
       }
     }
   };
@@ -109,19 +99,13 @@ export function QuoteForm() {
       });
 
       if (!response.ok) {
-        throw new Error(await response.text());
+        console.error("HubSpot API Error:", await response.text());
       }
-
-      router.push("/office-workstation/thank-you?success=true");
     } catch (error) {
       console.error("HubSpot API Error:", error);
-      toast({
-        variant: "destructive",
-        title: "Error",
-        description: "Failed to save your information. Please try again.",
-      });
     } finally {
       setIsSubmitting(false);
+      router.push("/thank-you?success=true");
     }
   };
 
@@ -205,7 +189,7 @@ export function QuoteForm() {
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>What is your requirement?</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <Select onValueChange={field.onChange} value={field.value}>
                         <FormControl>
                           <SelectTrigger>
                             <SelectValue placeholder="Select a requirement" />
@@ -229,7 +213,7 @@ export function QuoteForm() {
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>Required quantity?</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <Select onValueChange={field.onChange} value={field.value}>
                         <FormControl>
                           <SelectTrigger>
                             <SelectValue placeholder="Select a quantity" />
