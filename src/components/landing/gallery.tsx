@@ -44,18 +44,18 @@ const galleryItems = [
 
 export function Gallery() {
   return (
-    <section id="gallery" className="bg-background py-20 sm:py-28">
+    <section id="gallery" className="bg-background py-10 sm:py-20 lg:py-28">
       <div className="container">
         <div className="text-center">
-          <h2 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl text-foreground">
+          <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl text-foreground">
             Our <span className="text-secondary">Workstation </span>Range
           </h2>
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-foreground/80 md:text-xl">
+          <p className="mx-auto mt-4 sm:mt-6 max-w-3xl text-base sm:text-lg text-foreground/80 md:text-xl">
            Designed for comfort. Crafted for performance. Explore our best-selling chair collections.
           </p>
         </div>
-        <div className="mt-16">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-8 sm:mt-12 lg:mt-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {galleryItems.map((item) => (
               <div key={item.title} className="overflow-hidden rounded-lg shadow-lg bg-card text-card-foreground flex flex-col">
                 <Image
@@ -66,16 +66,16 @@ export function Gallery() {
                   className="w-full h-auto object-cover"
                   data-ai-hint={item.hint}
                 />
-                <div className="p-6 flex-grow flex flex-col">
-                  <h3 className="font-headline text-xl font-bold">{item.title}</h3>
-                  <p className="mt-2 text-foreground/80 text-base flex-grow">{item.description}</p>
+                <div className="p-5 sm:p-6 flex-grow flex flex-col">
+                  <h3 className="font-headline text-lg sm:text-xl font-bold">{item.title}</h3>
+                  <p className="mt-2 text-foreground/80 text-sm sm:text-base flex-grow">{item.description}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
-        <div className="mt-16 text-center">
-          <Button asChild size="lg" className="bg-secondary text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6">
+        <div className="mt-8 sm:mt-12 lg:mt-16 text-center">
+          <Button asChild size="lg" className="bg-secondary text-accent-foreground hover:bg-accent/90 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6">
             <Link href="#get-a-quote">Get a Quote</Link>
           </Button>
         </div>

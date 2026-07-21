@@ -17,32 +17,32 @@ const highlights = [
 
 export function CustomWorkspaceSection() {
   return (
-    <section className="py-20 sm:py-28 bg-background">
+    <section className="py-10 sm:py-20 lg:py-28 bg-background">
       <div className="container">
-        <div className="mx-auto max-w-5xl rounded-3xl border bg-card p-8 md:p-12 text-center shadow-lg">
+        <div className="mx-auto max-w-5xl rounded-2xl sm:rounded-3xl border bg-card p-6 sm:p-8 md:p-12 text-center shadow-lg">
 
-          <h2 className="mt-4 font-headline text-4xl font-bold tracking-tight text-secondary sm:text-5xl">
+          <h2 className="mt-2 sm:mt-4 font-headline text-3xl font-bold tracking-tight text-secondary sm:text-4xl lg:text-5xl">
             Customized for Your Workspace
           </h2>
 
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-foreground/80">
+          <p className="mx-auto mt-4 sm:mt-6 max-w-3xl text-base sm:text-lg leading-7 sm:leading-8 text-foreground/80">
             Every business works differently. We help you choose workstation
             layouts, finishes, and configurations that perfectly fit your
             workspace, team size, and day-to-day operations—creating an office
             that's both functional and visually impressive.
           </p>
 
-          <div className="mt-12 grid gap-6 sm:grid-cols-3">
+          <div className="mt-8 sm:mt-10 lg:mt-12 grid gap-4 sm:gap-6 sm:grid-cols-3">
             {highlights.map((item) => (
               <div
                 key={item.title}
-                className="rounded-2xl border bg-background p-6 transition-all hover:border-accent hover:shadow-md"
+                className="rounded-xl sm:rounded-2xl border bg-background p-4 sm:p-6 transition-all hover:border-accent hover:shadow-md"
               >
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-accent/10">
+                <div className="mx-auto flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-full bg-accent/10">
                   {item.icon}
                 </div>
 
-                <h3 className="mt-5 text-lg font-semibold text-foreground">
+                <h3 className="mt-3 sm:mt-5 text-base sm:text-lg font-semibold text-foreground">
                   {item.title}
                 </h3>
               </div>

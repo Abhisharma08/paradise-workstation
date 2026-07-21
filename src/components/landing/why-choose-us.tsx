@@ -37,23 +37,23 @@ const features = [
 
 export function WhyChooseUs() {
   return (
-    <section id="features" className="bg-card py-20 sm:py-28 border-y">
+    <section id="features" className="bg-card py-10 sm:py-20 lg:py-28 border-y">
       <div className="container">
         <div className="text-center">
-          <h2 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl text-foreground">
+          <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl text-foreground">
             Why Choose <span className="text-secondary">Paradise Furniture</span>?
           </h2>
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-foreground/80 md:text-xl">
+          <p className="mx-auto mt-4 sm:mt-6 max-w-3xl text-base sm:text-lg text-foreground/80 md:text-xl">
             We're more than just furniture. We're your partners in creating a productive and inspiring workspace.
           </p>
         </div>
-        <div className="mt-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 sm:mt-12 lg:mt-16 grid grid-cols-2 gap-6 sm:gap-8 lg:grid-cols-4">
           {features.map((feature) => (
             <div key={feature.title} className="text-center">
-              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-accent/10">
+              <div className="mx-auto flex h-14 w-14 sm:h-20 sm:w-20 items-center justify-center rounded-full bg-accent/10">
                 {feature.icon}
               </div>
-              <h3 className="mt-6 font-headline text-xl font-semibold text-foreground">{feature.title}</h3>
+              <h3 className="mt-4 sm:mt-6 font-headline text-base sm:text-xl font-semibold text-foreground">{feature.title}</h3>
             </div>
           ))}
         </div>
