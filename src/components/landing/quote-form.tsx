@@ -48,6 +48,7 @@ export function QuoteForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
   const router = useRouter();
+  const hubspotPath = "/office-workstation/api/hubspot-upsert";
 
   const form = useForm<FormData>({
     resolver: zodResolver(step === 1 ? stepOneSchema : formSchema),
@@ -70,7 +71,7 @@ export function QuoteForm() {
           phoneNumber: form.getValues("phoneNumber"),
         };
 
-        const response = await fetch("api/hubspot-upsert", {
+        const response = await fetch(hubspotPath, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -99,7 +100,7 @@ export function QuoteForm() {
   const handleSubmit = async (data: FormData) => {
     setIsSubmitting(true);
     try {
-      const response = await fetch("api/hubspot-upsert", {
+      const response = await fetch(hubspotPath, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
