@@ -70,7 +70,7 @@ export function QuoteForm() {
           phoneNumber: form.getValues("phoneNumber"),
         };
 
-        const response = await fetch("/office-workstation/api/hubspot-upsert", {
+        const response = await fetch("api/hubspot-upsert", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -99,7 +99,7 @@ export function QuoteForm() {
   const handleSubmit = async (data: FormData) => {
     setIsSubmitting(true);
     try {
-      const response = await fetch("/office-workstation/api/hubspot-upsert", {
+      const response = await fetch("api/hubspot-upsert", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
