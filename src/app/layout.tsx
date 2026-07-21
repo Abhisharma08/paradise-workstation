@@ -6,9 +6,9 @@ import Script from 'next/script';
 
 
 export const metadata: Metadata = {
-  title: 'Buy Office Chairs in Delhi – Ergonomic & Executive Chairs Online | Paradise Furniture',
-  description: 'Shop premium office chairs in Delhi at Paradise Furniture. Explore ergonomic, executive, and mesh chairs designed for comfort and productivity. Fast delivery & best prices.',
-  keywords: 'workspace Products, Paradise Furniture furniture, office solutions, commercial furniture, workspace solutions',
+  title: 'Premium Office Workstations for Smarter Workspaces',
+  description: 'At Paradise Furniture, we design workstations that combine functionality, comfort, and modern aesthetics.',
+  keywords: 'premium office workstations, office workstations, modern office furniture, office furniture, workspace solutions, office desks, modular workstations, commercial office furniture, ergonomic workstations, office interiors, Paradise Furniture',
 };
 
 export default function RootLayout({
