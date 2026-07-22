@@ -37,7 +37,7 @@ export default function RootLayout({
       <body className="font-body antialiased">
         <Script
           strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=##"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16479245566"
         />
         <Script
           id="gtag-init"
@@ -47,7 +47,7 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', '##');
+              gtag('config', 'AW-16479245566');
             `,
           }}
         />
