@@ -48,6 +48,31 @@ export default function RootLayout({
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'AW-16479245566');
+              gtag('config', 'AW-759943811/M7g1CPm9lb0cEIOlr-oC', {
+                'phone_conversion_number': '+919330017569'
+              });
+            `,
+          }}
+        />
+        <Script
+          id="gtag-report-conversion"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              function gtag_report_conversion(url) {
+                var callback = function () {
+                  if (typeof(url) != 'undefined') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-759943811/khfHCPa9lb0cEIOlr-oC',
+                    'value': 1.0,
+                    'currency': 'INR',
+                    'event_callback': callback
+                });
+                return false;
+              }
             `,
           }}
         />

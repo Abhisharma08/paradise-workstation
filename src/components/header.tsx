@@ -58,7 +58,18 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <div className="ml-auto hidden md:flex">
+        <div className="ml-auto hidden md:flex items-center gap-6">
+          <a
+            href="tel:+919330017569"
+            className="text-foreground font-semibold hover:text-primary transition-colors flex items-center gap-2"
+            onClick={(e) => {
+              if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
+                (window as any).gtag_report_conversion('tel:+919330017569');
+              }
+            }}
+          >
+            +919330017569
+          </a>
           <Button asChild className="bg-secondary text-accent-foreground hover:bg-accent">
             <Link href="#get-a-quote">Get a Quote</Link>
           </Button>
@@ -77,6 +88,17 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
+            <a
+              href="tel:+919330017569"
+              className="text-foreground font-semibold py-2"
+              onClick={(e) => {
+                if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
+                  (window as any).gtag_report_conversion('tel:+919330017569');
+                }
+              }}
+            >
+              +919330017569
+            </a>
             <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
               <Link href="#get-a-quote" onClick={() => setIsMenuOpen(false)}>Explore Workstations</Link>
             </Button>
