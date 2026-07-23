@@ -92,22 +92,19 @@ export function Gallery() {
                   <p className="mt-3 text-sm sm:text-base text-foreground/80 flex-grow">
                     {item.description}
                   </p>
+                  
+                  <div className="mt-4">
+                    <Button asChild variant="outline" className="w-full border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
+                      <Link href="#get-a-quote">Enquire Now</Link>
+                    </Button>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="mt-8 sm:mt-12 lg:mt-16 text-center">
-          <Button
-            asChild
-            size="lg"
-            className="bg-secondary text-accent-foreground hover:bg-accent/90 px-8 py-6 text-base sm:text-lg"
-          >
-            <Link href="#get-a-quote">Get a Quote</Link>
-          </Button>
-        </div>
+
       </div>
     </section>
   );
