@@ -44,7 +44,7 @@ export function ProductivitySection() {
           <div className="relative order-2 lg:order-1">
             <div className="overflow-hidden rounded-2xl sm:rounded-3xl shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dw9v7jjrq/image/upload/v1784612164/IMG_2024.JPG_wpra93.jpg"
                 alt="Modern Office Interior"
                 width={700}
                 height={800}

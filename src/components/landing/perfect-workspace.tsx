@@ -80,7 +80,7 @@ export function WorkspaceSolutions() {
           <div className="relative mt-4 lg:mt-0">
             <div className="overflow-hidden rounded-2xl sm:rounded-3xl shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop"
+                src="https://res.cloudinary.com/dw9v7jjrq/image/upload/v1784613824/IMG_2065_ykw4gj.png"
                 alt="Modern Office Workspace"
                 width={700}
                 height={800}
