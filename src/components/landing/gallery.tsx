@@ -16,7 +16,7 @@ const galleryItems = [
     description:
       "Designed to support collaboration while maintaining personal work zones.",
     image:
-      "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1784784663/cluster_workstation_cz5uci.jpg",
+      "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1784804126/IMG_2183_th5otz.jpg",
     hint: "cluster workstation",
   },
   {
